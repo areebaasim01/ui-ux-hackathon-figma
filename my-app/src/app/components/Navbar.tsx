@@ -39,7 +39,7 @@ export default function Navbar() {
 
                 {/* Navigation Links */}
                 <div className="flex  relative group">
-                    <a href="#Shop" className="text-black text-sm hover:underline flex items-center">
+                    <a href="/" className="text-black text-sm hover:underline flex items-center">
                         Shop
                         <Image 
                             src="/Vector.png" 
@@ -53,16 +53,16 @@ export default function Navbar() {
 <div>
                     {/* Dropdown Menu */}
                     <div className="relative group">
-  <a href="#Men" className="hidden block px-4 py-2 text-sm text-black hover:bg-gray-100">
+  <a href="/Men" className="hidden block px-4 py-2 text-sm text-black hover:bg-gray-100">
     Men
   </a>
   {/* Dropdown Menu */}
   <div className="absolute left-0 mt-2 hidden w-40 bg-white shadow-md rounded group-hover:block">
-    <a href="#Tshirts" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">
+    <a href="/Tshirts" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">
       T-shirts
     </a>
-    <a href="#Shoes" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">
-      Shoes
+    <a href="/Casual" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">
+      Casual
     </a>
     <a href="#Accessories" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">
       Accessories

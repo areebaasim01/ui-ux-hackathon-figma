@@ -19,11 +19,11 @@ const DressStyle = () => {
           </div>
 
           <div className="flex justify-center">
-            <Image src='/Frame 63.png' alt="img-12" width={689} height={289} />
+            <Image src='/Frame 64.png' alt="img-12" width={689} height={289} />
           </div>
 
           <div className="flex justify-center">
-            <Image src='/Frame 64.png' alt="img-11" width={407} height={289} />
+            <Image src='/Frame 63.png' alt="img-11" width={407} height={289} />
           </div>
         </div>
       </div>
