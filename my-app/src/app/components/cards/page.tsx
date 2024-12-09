@@ -1,5 +1,9 @@
 import Image from "next/image";
-interface CardProps{
+
+
+
+
+export interface CardProps{
     imageUrl:string;
     h1:string;
     stars:string;
@@ -32,5 +36,5 @@ return(
 )
  }
 
- 
+
  export default Card;
