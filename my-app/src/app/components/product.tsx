@@ -46,7 +46,7 @@ const Product = () => {
             className="rounded-lg shadow-sm hover:shadow-md p-4"
           >
             <img
-              src={product.image} // Use the product image
+              src={product.image} 
               alt={product.name}
               className="rounded-lg mb-4 w-full h-64 object-cover" // Fixed height of 16rem (h-64)
             />

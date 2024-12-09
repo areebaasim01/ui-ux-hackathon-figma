@@ -1,11 +1,9 @@
 import Image from 'next/image';
-
+import Link from 'next/link';
 
 export default function Navbar() {
     return (
         <div>
-
-            
             {/* Top Notification Bar */}
             <div className="bg-black w-full h-[38px] flex items-center justify-between px-4">
                 {/* Text Section */}
@@ -29,69 +27,70 @@ export default function Navbar() {
             <div className="bg-white w-[1240px] ml-[50px] gap-[40px] h-[60px] flex items-center justify-between px-8 ">
                 {/* Logo */}
                 <div className="flex items-center">
-                    <Image
-                        src="/SHOP.CO.png"
-                        alt="Shop.co Logo"
-                        width={160}
-                        height={22}
-                    />
+                    <Link href="/">
+                        <Image
+                            src="/SHOP.CO.png"
+                            alt="Shop.co Logo"
+                            width={160}
+                            height={22}
+                        />
+                    </Link>
                 </div>
 
                 {/* Navigation Links */}
-                <div className="flex  relative group">
-                    <a href="/" className="text-black text-sm hover:underline flex items-center">
+                <div className="flex relative group">
+                    <Link href="/" className="text-black text-sm hover:underline flex items-center">
                         Shop
-                        <Image 
-                            src="/Vector.png" 
-                            alt="Dropdown Arrow" 
-                            height={6.5} 
-                            width={11.5} 
+                        <Image
+                            src="/Vector.png"
+                            alt="Dropdown Arrow"
+                            height={6.5}
+                            width={11.5}
                             className="ml-1"
                         />
-                    </a>
+                    </Link>
 
-<div>
-                    {/* Dropdown Menu */}
-                    <div className="relative group">
-  <a href="/Men" className="hidden block px-4 py-2 text-sm text-black hover:bg-gray-100">
-    Men
-  </a>
-  {/* Dropdown Menu */}
-  <div className="absolute left-0 mt-2 hidden w-40 bg-white shadow-md rounded group-hover:block">
-    <a href="/Tshirts" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">
-      T-shirts
-    </a>
-    <a href="/Casual" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">
-      Casual
-    </a>
-    <a href="#Accessories" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">
-      Accessories
-    </a>
-  </div>
-</div>
-
-
-</div>
-
+                    <div>
+                        {/* Dropdown Menu */}
+                        <div className="relative group">
+                            <Link href="/Men" className="hidden block px-4 py-2 text-sm text-black hover:bg-gray-100">
+                                Men
+                            </Link>
+                            <div className="absolute left-0 mt-2 hidden w-40 bg-white shadow-md rounded group-hover:block">
+                                <Link href="/Tshirts" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">
+                                    T-shirts
+                                </Link>
+                                <Link href="/Casual" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">
+                                    Casual
+                                </Link>
+                                <Link href="#Accessories" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">
+                                    Accessories
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <a href="#" className="text-black text-sm hover:underline">On Sale</a>
-                <a href="#newArrivals" className="text-black text-sm hover:underline">New Arrivals</a>
-                <a href="#" className="text-black text-sm hover:underline">Brands</a>
+                <Link href="/on-sale" className="text-black text-sm hover:underline">On Sale</Link>
+                <Link href="#newArrivals" className="text-black text-sm hover:underline">New Arrivals</Link>
+                <Link href="/brands" className="text-black text-sm hover:underline">Brands</Link>
 
                 {/* Search Bar or Additional Icons */}
                 <div id="inputmain" className="flex items-center bg-[#F0F0F0] justify-center gap-3 rounded-full pl-1">
-                  <div id="input1">
-                  <Image 
-                  src="/searchicon.png"
-                  alt=""
-                  height={24}
-                  width={24}
-                  />
-                  </div>
-                  <input placeholder=" search for products..." id="input" className=" bg-[#F0F0F0] w-[450px] h-[48px] rounded-r-full"></input>
+                    <div id="input1">
+                        <Image
+                            src="/searchicon.png"
+                            alt=""
+                            height={24}
+                            width={24}
+                        />
+                    </div>
+                    <input
+                        placeholder=" search for products..."
+                        id="input"
+                        className="bg-[#F0F0F0] w-[450px] h-[48px] rounded-r-full"
+                    />
                 </div>
-
 
                 {/* Right Section: Icons */}
                 <div className="flex items-center gap-[10px] ">
