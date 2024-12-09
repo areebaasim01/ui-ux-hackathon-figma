@@ -3,7 +3,7 @@ import Image from "next/image";
 
 
 
-export interface CardProps{
+ interface CardProps{
     imageUrl:string;
     h1:string;
     stars:string;
