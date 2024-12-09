@@ -1,61 +1,110 @@
-import Card from "@/app/components/cards/page";
+import Image from "next/image";
 
-export default function newArrivals() {
+export default function NewArrivals() {
   return (
-    <>
-    <div className="bg-white flex items-center flex-col justify-center object-cover ">
-        
-      <h1 className=" pt-5 font-integral text-[30px] md:text-[48px] font-bold leading-[57.6px]">
+    <div className="bg-white flex items-center flex-col justify-center object-cover">
+      {/* Header */}
+      <h1 className="pt-5 font-integral text-[30px] md:text-[48px] font-bold leading-[57.6px]">
         New Arrivals
       </h1>
-      <div className=" w-[] h-fit flex md:flex-row flex-col items-center justify-between md:mx-[100px] gap-4 md:gap-8 md:mt-10">
-        {/* card1 */}
-        <Card
-          imageUrl="/arrival1.png"
-          h1="T-SHIRT WITH TAPE DETAILS"
-          stars="/stars.png"
-          ranking="4.5/5"
-          price={120}
-          className="w-[200px] h-[200px] md:w-[295px] md:h-[298px] rounded-[13.42px] md:rounded-[20px] bg-[#F0EEED] ml-[100px] "
-        />
-        {/* card2 */}
-        <Card
-          imageUrl="/arrival2.png"
-          h1="SKINNY FIT JEANS"
-          stars="/stars.png"
-          ranking="4.5/5"
-          price={240}
-          className="w-[200px] h-[200px] md:w-[295px] md:h-[298px] rounded-[13.42px] md:rounded-[20px] bg-[#F0EEED]"
-        />
 
-        {/* card3 (hidden on mobile, shown on md and up) */}
-        <Card
-          imageUrl="/arrival3.png"
-          h1="CHECKERED SHIRT"
-          stars="/stars.png"
-          ranking="4.5/5"
-          price={180}
-          className="hidden md:block  md:w-[295px] md:h-[298px] md:rounded-[20px] md:bg-[#F0EEED]"
-        />
+      {/* Product Grid */}
+      <div className="w-full h-fit flex flex-col md:flex-row items-center justify-between md:mx-[100px] gap-4 md:gap-8 md:mt-10">
+        {/* Product 1 */}
+        <div className="flex flex-col items-center gap-3 w-[200px] md:w-[295px] h-[200px] md:h-[298px] rounded-[13.42px] md:rounded-[20px] bg-[#F0EEED]">
+          <Image
+            src="/arrival1.png"
+            alt="T-Shirt with Tape Details"
+            width={295}
+            height={298}
+            className="rounded-[20px]"
+          />
+          <h2 className="capitalize text-center font-satoshi text-[18px] font-bold leading-[27px]">
+            T-Shirt with Tape Details
+          </h2>
+          <Image
+            src="/stars.png"
+            alt="Rating Stars"
+            width={150}
+            height={19}
+            className="w-[150px]"
+          />
+          <p className="text-2xl font-bold">$120</p>
+        </div>
 
-        {/* card4 (hidden on mobile, shown on md and up) */}
-        <Card
-          imageUrl="/arrival4.png"
-          h1="SLEEVE STRIPED T-SHIRT"
-          stars="/stars.png"
-          ranking="4.5/5"
-          price={130}
-          className="hidden md:block md:w-[295px] md:h-[298px] md:rounded-[20px] md:bg-[#F0EEED]"
-        />
+        {/* Product 2 */}
+        <div className="flex flex-col items-center gap-3 w-[200px] md:w-[295px] h-[200px] md:h-[298px] rounded-[13.42px] md:rounded-[20px] bg-[#F0EEED]">
+          <Image
+            src="/arrival2.png"
+            alt="Skinny Fit Jeans"
+            width={295}
+            height={298}
+            className="rounded-[20px]"
+          />
+          <h2 className="capitalize text-center font-satoshi text-[18px] font-bold leading-[27px]">
+            Skinny Fit Jeans
+          </h2>
+          <Image
+            src="/stars.png"
+            alt="Rating Stars"
+            width={150}
+            height={19}
+            className="w-[150px]"
+          />
+          <p className="text-2xl font-bold">$240</p>
+        </div>
+
+        {/* Product 3 */}
+        <div className="hidden md:flex flex-col items-center gap-3 w-[295px] h-[298px] rounded-[20px] bg-[#F0EEED]">
+          <Image
+            src="/arrival3.png"
+            alt="Checkered Shirt"
+            width={295}
+            height={298}
+            className="rounded-[20px]"
+          />
+          <h2 className="capitalize text-center font-satoshi text-[18px] font-bold leading-[27px]">
+            Checkered Shirt
+          </h2>
+          <Image
+            src="/stars.png"
+            alt="Rating Stars"
+            width={150}
+            height={19}
+            className="w-[150px]"
+          />
+          <p className="text-2xl font-bold">$180</p>
+        </div>
+
+        {/* Product 4 */}
+        <div className="hidden md:flex flex-col items-center gap-3 w-[295px] h-[298px] rounded-[20px] bg-[#F0EEED]">
+          <Image
+            src="/arrival4.png"
+            alt="Sleeve Striped T-Shirt"
+            width={295}
+            height={298}
+            className="rounded-[20px]"
+          />
+          <h2 className="capitalize text-center font-satoshi text-[18px] font-bold leading-[27px]">
+            Sleeve Striped T-Shirt
+          </h2>
+          <Image
+            src="/stars.png"
+            alt="Rating Stars"
+            width={150}
+            height={19}
+            className="w-[150px]"
+          />
+          <p className="text-2xl font-bold">$130</p>
+        </div>
       </div>
+
+      {/* View All Button */}
       <div className="md:mt-[150px]">
-      <button className=" w-[358px] h-[46px] md:w-[295px] md:h-[52px] rounded-[62px] py-4 px-[54px]   hover:bg-gray-200 flex items-center justify-center">
-        View All
-      </button>
+        <button className="w-[358px] h-[46px] md:w-[295px] md:h-[52px] rounded-[62px] py-4 px-[54px] hover:bg-gray-200 flex items-center justify-center">
+          View All
+        </button>
       </div>
-
-      </div>
-   
-    </>
+    </div>
   );
 }
