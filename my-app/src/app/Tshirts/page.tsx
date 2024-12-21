@@ -15,7 +15,7 @@ const Tshirts = () => {
         <div className="grid grid-cols-3 gap-0 p-6">
           {/* Small Images Section */}
           <div className="flex flex-col gap-12">
-            <div className="w- h-16  border rounded-md cursor-pointer">
+            <div className=" h-16  border rounded-md cursor-pointer">
               <Image
                 src="/image2.png"
                 alt="Thumbnail 1"
@@ -106,9 +106,10 @@ const Tshirts = () => {
 
             {/* Add to Cart Button */}
             <div className="mt-6">
-              <button className="w-full px-4 py-2 text-white bg-black rounded-md hover:bg-gray-800">
+               <button className="w-full px-4 py-2 text-white bg-black rounded-md hover:bg-gray-800">
                 Add to Cart
               </button>
+              
             </div>
           </div>
         </div>

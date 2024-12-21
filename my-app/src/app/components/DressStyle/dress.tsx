@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const DressStyle = () => {
   return (
-    <div className="justify-center items-center ml-48">
-      <div className="ml-5 sm:ml-0 px-6 sm:px-4 w-full max-w-screen-xl h-auto bg-[#F0F0F0] rounded-xl mt-16">
+    <div className="justify-center items-center mx-5 sm:mx-0">
+      <div className=" px-6 sm:px-4 w-full max-w-screen-xl h-auto bg-[#F0F0F0] rounded-xl mt-16">
         <h1 className="font-bold text-3xl sm:text-4xl text-center p-6 sm:p-12">
           BROWSE BY DRESS STYLE
         </h1>

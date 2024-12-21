@@ -70,7 +70,7 @@ const Product = () => {
                 </span>
               )}
               {product.discount && (
-                <span className="text-sm text-red-500 font-medium">
+                <span className="bg-red-100 text-red-500 text-xs font-bold px-2 py-1 rounded-lg whitespace-nowrap">
                   {product.discount}
                 </span>
               )}
